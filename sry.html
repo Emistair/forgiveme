@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apology Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('lion.jpg'); /* Replace with your cute background image URL */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #apology-container {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            color: #ff6f61;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        button {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e35d58;
+        }
+    </style>
+</head>
+<body>
+
+<div id="apology-container">
+    <h1>Sorry, Priya</h1>
+    <p>I messed up by judging you and raising a red flag. I am truly sorry for my words, and I realize how hurtful they were. Please forgive me for my thoughtless actions.</p>
+    <p>Our friendship means a lot to me, and I am committed to learning from this mistake and being a better friend to you. Let's continue making awesome memories together!</p>
+    <button onclick="showApology()">Click me for a surprise!</button>
+</div>
+
+<script>
+    function showApology() {
+        alert("Surprise! I promise to make it up to you and cherish our friendship. 🎉");
+    }
+</script>
+
+</body>
+</html>
